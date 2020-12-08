@@ -96,6 +96,9 @@
     [[17, 20, 23], 1, Detect, [nc, anchors]], # Detect(P3, P4, P5)
 
 ### Hyper-parameters used in training
+This hyper-parameters are fine tuned on PASCAL VOC dataset.
+
+
      ```
      lr0: 0.01
      lrf: 0.2
