@@ -3,10 +3,10 @@
 ## Preprocessing
 ### Dataset1
 #### Sources of data:
-   - 3002 images from dataset released by organizer
-   - 272 images from [Dhaka-Traffic repository](https://github.com/Morshed-Alam/Dhaka-Traffic.git)
-   - 6417 images generated using augmentation
-   - 499 images from first round (Annotated manually)
+- 3002 images from dataset released by organizer
+- 272 images from [Dhaka-Traffic repository](https://github.com/Morshed-Alam/Dhaka-Traffic.git)
+- 6417 images generated using augmentation
+- 499 images from first round (Annotated manually)
 #### Process:
 - Download 3002 images released by organizer and 272 images from  [Dhaka-Traffic repository](https://github.com/Morshed-Alam/Dhaka-Traffic.git)
 - Generate 6417 images using augmentation (Horizontal flip, Translation, Rotation, Shear, RandomHSV, Scale etc.) to images containing lower frequency classes (first 11 classes).
@@ -18,11 +18,11 @@
 
 ### Dataset2
 #### Sources of data:
-   - 3002 images from dataset released by organizer
-    - 272 images from [Dhaka-Traffic repository](https://github.com/Morshed-Alam/Dhaka-Traffic.git)
-    - 6417 images generated using augmentation
-    - 499 images from first round (Annotated manually)
-    - 537 images generated using dark and blur augmentation on [Roboflow](https://roboflow.com/). 
+- 3002 images from dataset released by organizer
+- 272 images from [Dhaka-Traffic repository](https://github.com/Morshed-Alam/Dhaka-Traffic.git)
+- 6417 images generated using augmentation
+- 499 images from first round (Annotated manually)
+- 537 images generated using dark and blur augmentation on [Roboflow](https://roboflow.com/). 
 #### Process:
 - Download 3002 images released by organizer and 272 images from  [Dhaka-Traffic repository](https://github.com/Morshed-Alam/Dhaka-Traffic.git)
 - Add test1 annotated data to train set.
@@ -32,7 +32,16 @@
 - Resize train and valid set to 1024x1024.
 - Add 537 images generated using dark and blur augmentation on [Roboflow](https://roboflow.com/) from organizer released dataset selecting randomly.
 - Finally add valid set data to train set to increase train data.
+
 ## Training
+### Training setup
+
+    ``` 
+    img-size 1024
+    batch-size 4
+    epochs 40
+    weights yolov5x.pt
+       
 ### Model configuration & architecture
     ```
     # parameters
@@ -114,3 +123,8 @@
      mixup: 0.243
      
 ## Inference
+### Setup
+- Weights from training on dataset1 and dataset2 (ensembling)
+- TTA (Test time augmentation)
+- Confidence threshold 0.5
+- IoU threshold 0.5
