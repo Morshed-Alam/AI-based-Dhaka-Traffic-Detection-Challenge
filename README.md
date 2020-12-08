@@ -3,14 +3,14 @@
 ## Preprocessing
 ### Dataset1
 #### Sources of data:
-- 3002 images from dataset released by organizer
-- 272 images from [Dhaka-Traffic repository](https://github.com/Morshed-Alam/Dhaka-Traffic.git)
-- 6417 images generated using augmentation
-- 499 images from first round (Annotated manually)
+   - 3002 images from dataset released by organizer
+   - 272 images from [Dhaka-Traffic repository](https://github.com/Morshed-Alam/Dhaka-Traffic.git)
+   - 6382 images generated using augmentation
+   - 499 images from first round (Annotated manually)
 #### Process:
 - Download 3002 images released by organizer and 272 images from  [Dhaka-Traffic repository](https://github.com/Morshed-Alam/Dhaka-Traffic.git)
-- Generate 6417 images using augmentation (Horizontal flip, Translation, Rotation, Shear, RandomHSV, Scale etc.) to images containing lower frequency classes (first 11 classes).
-- Split data to train and valid set using 80 - 20% split ratio on original images.
+- Generate 6382 images using augmentation (Horizontal flip, Translation, Rotation, Shear, RandomHSV, Scale etc.) to images containing lower frequency classes (first 11 classes).
+- Split data into train and valid set. Train set = 8656 & valid set = 1000.
 - Add test1 annotated data to train set.
 - Convert train and valid set to YOLOv5 data format.
 - Resize train and valid set to 1024x1024.
@@ -18,21 +18,20 @@
 
 ### Dataset2
 #### Sources of data:
-- 3002 images from dataset released by organizer
-- 272 images from [Dhaka-Traffic repository](https://github.com/Morshed-Alam/Dhaka-Traffic.git)
-- 6417 images generated using augmentation
-- 499 images from first round (Annotated manually)
-- 537 images generated using dark and blur augmentation on [Roboflow](https://roboflow.com/). 
+   - 3002 images from dataset released by organizer
+    - 272 images from [Dhaka-Traffic repository](https://github.com/Morshed-Alam/Dhaka-Traffic.git)
+    - 5001 images generated using augmentation
+    - 499 images from first round (Annotated manually)
+    - 537 images generated using dark and blur augmentation on [Roboflow](https://roboflow.com/). 
 #### Process:
 - Download 3002 images released by organizer and 272 images from  [Dhaka-Traffic repository](https://github.com/Morshed-Alam/Dhaka-Traffic.git)
 - Add test1 annotated data to train set.
-- Generate 6417 images using augmentation (Horizontal flip, Translation, Rotation, Shear, RandomHSV, Scale etc.) to images containing lower frequency classes (first 11 classes).
-- Split data to train and valid set using 80 - 20% split ratio on original images.
+- Generate 5001 images using augmentation (Horizontal flip, Translation, Rotation, Shear, RandomHSV, Scale etc.) to images containing lower frequency classes (first 9 classes).
+- Split data into train and valid set. Train set = 8774 & valid set = 1500.
 - Convert train and valid set to YOLOv5 data format.
 - Resize train and valid set to 1024x1024.
 - Add 537 images generated using dark and blur augmentation on [Roboflow](https://roboflow.com/) from organizer released dataset selecting randomly.
 - Finally add valid set data to train set to increase train data.
-
 ## Training
 ### Training setup
 
