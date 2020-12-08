@@ -11,7 +11,7 @@
    - 3002 images from dataset released by organizer
    - 272 images from [Dhaka-Traffic repository](https://github.com/Morshed-Alam/Dhaka-Traffic.git)
    - 6382 images generated using augmentation
-   - 499 images from first round (Annotated manually)
+   - 499 images from first round test set (Annotated manually)
 #### Process:
 - Download 3002 images released by organizer and 272 images from  [Dhaka-Traffic repository](https://github.com/Morshed-Alam/Dhaka-Traffic.git)
 - Generate 6382 images using augmentation (Horizontal flip, Translation, Rotation, Shear, RandomHSV, Scale etc.) to images containing lower frequency classes (first 11 classes).
@@ -26,7 +26,7 @@
    - 3002 images from dataset released by organizer
     - 272 images from [Dhaka-Traffic repository](https://github.com/Morshed-Alam/Dhaka-Traffic.git)
     - 5001 images generated using augmentation
-    - 499 images from first round (Annotated manually)
+    - 499 images from first round test set(Annotated manually)
     - 537 images generated using dark and blur augmentation on [Roboflow](https://roboflow.com/). 
 #### Process:
 - Download 3002 images released by organizer and 272 images from  [Dhaka-Traffic repository](https://github.com/Morshed-Alam/Dhaka-Traffic.git)
