@@ -5,6 +5,8 @@
 - [Inference notebook](https://colab.research.google.com/drive/1e1dJOkvzOXpuwXKqS9aotpfP0moDForY?usp=sharing)
 - [Dataset1](https://drive.google.com/file/d/1RNL2AT0UIrmQl7j0Ul01wVO1tKbBO1lG/view?usp=sharing)
 - [Dataset2](https://drive.google.com/file/d/18PXVNsaUK4AveaawKFAMQ_HeQRfnOCxT/view?usp=sharing)
+- [Weights trained on dataset1](https://drive.google.com/file/d/1KigPzWHrQrb8YsB7QxATeVpY5yFnGs8i/view?usp=sharing)
+- [Weights trained on dataset2](https://drive.google.com/file/d/1IHxNroBc6uPJCdk8ZQ0gh4z9IUNWcZ_d/view?usp=sharing)
 ## Preprocessing
 ### Dataset1
 #### Sources of data:
