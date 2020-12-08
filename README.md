@@ -24,10 +24,10 @@
 ### Dataset2
 #### Sources of data:
    - 3002 images from dataset released by organizer
-    - 272 images from [Dhaka-Traffic repository](https://github.com/Morshed-Alam/Dhaka-Traffic.git)
-    - 5001 images generated using augmentation
-    - 499 images from first round (Annotated manually)
-    - 537 images generated using dark and blur augmentation on [Roboflow](https://roboflow.com/). 
+   - 272 images from [Dhaka-Traffic repository](https://github.com/Morshed-Alam/Dhaka-Traffic.git)
+   - 5001 images generated using augmentation
+   - 499 images from first round (Annotated manually)
+   - 537 images generated using dark and blur augmentation on [Roboflow](https://roboflow.com/). 
 #### Process:
 - Download 3002 images released by organizer and 272 images from  [Dhaka-Traffic repository](https://github.com/Morshed-Alam/Dhaka-Traffic.git)
 - Add test1 annotated data to train set.
