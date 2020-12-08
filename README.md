@@ -7,6 +7,8 @@
 - [Dataset2](https://drive.google.com/file/d/18PXVNsaUK4AveaawKFAMQ_HeQRfnOCxT/view?usp=sharing)
 - [Weights trained on dataset1](https://drive.google.com/file/d/1KigPzWHrQrb8YsB7QxATeVpY5yFnGs8i/view?usp=sharing)
 - [Weights trained on dataset2](https://drive.google.com/file/d/1IHxNroBc6uPJCdk8ZQ0gh4z9IUNWcZ_d/view?usp=sharing)
+## Environment
+- Google Colab Notebooks with free GPU.
 ## Preprocessing
 ### Dataset1
 #### Sources of data:
