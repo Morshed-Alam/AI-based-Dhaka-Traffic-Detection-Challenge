@@ -2,14 +2,14 @@
 
 ## Preprocessing
    ### Dataset1
-     -Sources of data:
+     ####Sources of data:
        - 3002 images from dataset released by organizer
        - 272 images from Dhaka-Traffic repository
        - 6417 images generated using augmentation (Horizontal flip, Translation, Rotation, Shear, RandomHSV, Scale etc.) to images containing lower frequency classes (first 11 classes)
        - 499 images from first round (Annotated manually)
        
    ### Dataset2
-     -Sources of data:
+     ####Sources of data:
        - 3002 images from dataset released by organizer
        - 272 images from Dhaka-Traffic repository
        - 6417 images generated using augmentation (Horizontal flip, Translation, Rotation, Shear, RandomHSV, Scale etc.) to images containing lower frequency classes (first 11            classes)
